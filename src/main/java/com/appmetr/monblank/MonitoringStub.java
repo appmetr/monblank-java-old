@@ -17,19 +17,19 @@ public class MonitoringStub implements Monitoring {
     }
 
     @Override public StopWatch start(String monitorName) {
-        return new StopWatch();
+        return new StopWatch().start();
     }
 
     @Override public StopWatch start(String monitorName, String propertyName, String propertyValue) {
-        return new StopWatch();
+        return new StopWatch().start();
     }
 
     @Override public StopWatch start(String monitorName, String... properties) {
-        return new StopWatch();
+        return new StopWatch().start();
     }
 
     @Override public StopWatch start(MonitorKey key) {
-        return new StopWatch();
+        return new StopWatch().start();
     }
 
     @Override public void add(String monitorName, String units, double value) {
