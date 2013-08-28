@@ -6,7 +6,7 @@
     <groupId>com.appmetr</groupId>
     <artifactId>monblank-java</artifactId>
     <packaging>jar</packaging>
-    <version>0.2.1</version>
+    <version>0.2.2-SNAPSHOT</version>
     <name>MonBlank Client for Java</name>
 
     <properties>
