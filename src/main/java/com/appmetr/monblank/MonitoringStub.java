@@ -5,7 +5,7 @@ import java.util.List;
 public class MonitoringStub implements Monitoring {
 
     @Override public StopWatch start(String group, String monitorName) {
-        return new StopWatch();
+        return new StopWatch().start();
     }
 
     @Override public void add(String group, String monitorName, String units, double value) {
