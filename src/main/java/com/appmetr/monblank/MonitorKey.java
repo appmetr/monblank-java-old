@@ -22,18 +22,6 @@ public class MonitorKey {
         precalcHash = precalcHash();
     }
 
-    public MonitorKey(String name, String... properties) {
-        this.name = name;
-        this.properties = new HashMap<String, String>();
-        for (int i = 0; i < properties.length; i = i + 2) {
-            String property = properties[i];
-            String value = properties[i + 1];
-
-            this.properties.put(property, value);
-        }
-        precalcHash = precalcHash();
-    }
-
     public String getName() {
         return name;
     }
