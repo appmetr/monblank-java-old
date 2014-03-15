@@ -6,7 +6,7 @@ import java.util.Map;
 public class MonitoringStub implements Monitoring {
 
     @Override public StopWatch start(String group, String monitorName) {
-        return null;
+        return new StopWatch().start();
     }
 
     @Override public void add(String group, String monitorName, String units, double value) {
@@ -18,11 +18,11 @@ public class MonitoringStub implements Monitoring {
     }
 
     @Override public StopWatch start(String group, String monitorName, Map<String, String> properties) {
-        return null;
+        return new StopWatch().start();
     }
 
     @Override public StopWatch start(MonitorKey key) {
-        return null;
+        return new StopWatch().start();
     }
 
     @Override public void add(String group, String monitorName, String units, double value, Map<String, String> properties) {
