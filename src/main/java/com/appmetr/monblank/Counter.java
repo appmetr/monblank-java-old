@@ -35,10 +35,6 @@ public class Counter {
         this.key = new MonitorKey(name);
     }
 
-    public Counter(String monitorName, String... properties) {
-        this.key = new MonitorKey(monitorName, properties);
-    }
-
     public MonitorKey getKey() {
         return key;
     }
