@@ -16,15 +16,11 @@ public class MonitoringStub implements Monitoring {
         //NOP
     }
 
-    @Override public StopWatch start(String monitorName) {
+    @Override public StopWatch start(String group, String monitorName, String propertyName, String propertyValue) {
         return new StopWatch().start();
     }
 
-    @Override public StopWatch start(String monitorName, String propertyName, String propertyValue) {
-        return new StopWatch().start();
-    }
-
-    @Override public StopWatch start(String monitorName, String... properties) {
+    @Override public StopWatch start(String group, String monitorName, String... properties) {
         return new StopWatch().start();
     }
 
@@ -32,16 +28,12 @@ public class MonitoringStub implements Monitoring {
         return new StopWatch().start();
     }
 
-    @Override public void add(String monitorName, String units, double value) {
-        //NOP
-    }
-
     @Override
-    public void add(String monitorName, String units, double value, String propertyName, String propertyValue) {
+    public void add(String group, String monitorName, String units, double value, String propertyName, String propertyValue) {
         //NOP
     }
 
-    @Override public void add(String monitorName, String units, double value, String... properties) {
+    @Override public void add(String group, String monitorName, String units, double value, String... properties) {
         //NOP
     }
 
@@ -49,15 +41,12 @@ public class MonitoringStub implements Monitoring {
         //NOP
     }
 
-    @Override public void inc(String monitorName) {
+
+    @Override public void inc(String group, String monitorName, String propertyName, String propertyValue) {
         //NOP
     }
 
-    @Override public void inc(String monitorName, String propertyName, String propertyValue) {
-        //NOP
-    }
-
-    @Override public void inc(String monitorName, String... properties) {
+    @Override public void inc(String group, String monitorName, String... properties) {
         //NOP
     }
 
